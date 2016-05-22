@@ -27,7 +27,7 @@
             	<td rowspan="{{spot.nbFish}}">{{spot.name}} {{spot.code}} {{spot.nbFish}}</td>
             {{/if}}
             	<td>{{fish.name}} [{{fishIndex}}]</td>
-            	<td><div class="fishInfo"> INFO </div></td>
+            	<td><div class="fishInfo"> {{fish-detail fish=fish}} </div></td>
          	</tr>
           {{/each}}
          	{{/each}}

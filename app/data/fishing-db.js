@@ -1,5 +1,3 @@
-import Ember from 'ember';
-
 var db = {
 
   "islands":[
@@ -39,10 +37,10 @@ var db = {
   ],
 
   "fishes": [
-    {"code": "F1", "name": "fishy 1"},
-    {"code": "F2", "name": "fishy 2"},
-    {"code": "F3", "name": "fishy 3"}
+    {"code": "F1", "name": "fishy 1", "bait":"ABCDEF"},
+    {"code": "F2", "name": "fishy 2", "bait":"CDEF"},
+    {"code": "F3", "name": "fishy 3", "bait":"ACE"}
   ]
-}
+};
 
 export default db;
