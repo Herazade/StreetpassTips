@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'web',
+    modulePrefix: 'streetpass-tips',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
