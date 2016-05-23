@@ -3,5 +3,5 @@ import attr from 'ember-data/attr';
 import { hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
-	baits:	hasMany('bait')
+	baits:	hasMany('fishing/bait')
 });
