@@ -16,22 +16,9 @@
         </thead>
 
         <tbody>
-        	{{#each model.islands as |island|}}
-          {{#each island.spots as |spot spotIndex|}}
-          {{#each spot.fish as |fish fishIndex|}}
-          <tr>
-            {{#if (eq spotIndex fishIndex 0)}}
-              <td rowspan="{{island.nbFish}}">{{island.name}} ({{island.code}}) {{island.nbFish}}</td>
-            {{/if}}
-            {{#if (eq fishIndex 0)}}
-            	<td rowspan="{{spot.nbFish}}">{{spot.name}} {{spot.code}} {{spot.nbFish}}</td>
-            {{/if}}
-            	<td>{{fish.name}} [{{fishIndex}}]</td>
-            	<td><div class="fishInfo"> {{fish-detail fish=fish}} </div></td>
+           <tr>
+            <td>TODO</td>
          	</tr>
-          {{/each}}
-         	{{/each}}
-          {{/each}}
         </tbody>
       </table>
 </div>
