@@ -1,7 +1,7 @@
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
-import { hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
-	baits:	hasMany('bait')
+	color: attr('string'),
+	shape: attr('string')
 });
