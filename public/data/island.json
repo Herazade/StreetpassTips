@@ -1,0 +1,36 @@
+[
+	{
+		"id": "PRE",
+		"name": "Prelude Island",
+		"spots" : [
+			{"id": "BeBa", "name": "Beginniner's Bay"},
+			{"id": "SyRi", "name": "Sylvana River"},
+			{"id": "CyLa", "name": "Cypress Lake"},
+			{"id": "PDSC", "name": "Prelude Deep-Sea Cruise"}
+		],
+		"ticket" : null
+	},
+	{
+		"id": "IS2",
+		"name": "Giovanna Island",
+		"spots" : [
+			{"id": "ArBe", "name": "Ariana Beach"},
+			{"id": "FePo", "name": "Fernhollow Pond"},
+			{"id": "ShLa", "name": "Shangri Lake"},
+			{"id": "CoPi", "name": "Coleville Pier"},
+			{"id": "EmRi", "name": "Emberwood River"}
+		],
+		"ticket" : "silver"
+	},
+	{
+		"id": "IS3",
+		"name": "Island 3",
+		"spots" : [
+			{"id": "SP31"},
+			{"id": "SP32"},
+			{"id": "SP33"},
+			{"id": "SP34"}
+		],
+		"ticket" : "gold"
+	}
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "Wh",
+    "color": "white",
+    "shape": "crab"
+  },
+  {
+    "id": "BW",
+    "color": "brown",
+    "shape": "beetle"
+  },
+  {
+    "id": "Pi",
+    "color": "pink",
+    "shape": "seashell"
+  },
+  {
+    "id": "PU",
+    "color": "purple",
+    "shape": "starfish"
+  },
+  {
+    "id": "LB",
+    "color": "light blue",
+    "shape": "sardine"
+  },
+  {
+    "id": "BU",
+    "color": "blue",
+    "shape": "fossil"
+  },
+  {
+    "id": "LG",
+    "color": "light green",
+    "shape": "water flea"
+  },
+  {
+    "id": "GR",
+    "color": "green",
+    "shape": "seaweed"
+  },
+  {
+    "id": "Or",
+    "color": "orange",
+    "shape": "roe"
+  },
+  {
+    "id": "YE",
+    "color": "yellow",
+    "shape": "shrimp"
+  },
+  {
+    "id": "Rd",
+    "color": "red",
+    "shape": "worm"
+  }
+]

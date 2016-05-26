@@ -1,24 +1,21 @@
 <h5>Fish by Location</h5>
 
 <div id="filters" class="section">
-	<p>TODO Filters</p>
+  <p>TODO Filters</p>
 </div>
 
 <div id="results" class="section">
-	<table class="bordered">
-        <thead>
-          <tr>
-              <th data-field="island">Island</th>
-              <th data-field="spot">Spot</th>
-              <th data-field="fishName">Name</th>
-              <th data-field="fishInfo">Info</th>
-          </tr>
-        </thead>
-
-        <tbody>
-           <tr>
-            <td>TODO</td>
-         	</tr>
-        </tbody>
-      </table>
+  <div class="row">
+    {{#each islands as |island|}}
+    <div class="col s12 m6 l3">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">{{island.name}}</span>
+          <p>STATS PLACEHOLDER</p>
+          <p>Ticket : {{#if island.ticket}}{{island.ticket}}{{else}}none{{/if}}</p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
 </div>
