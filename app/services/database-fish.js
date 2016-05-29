@@ -5,14 +5,29 @@ export default Ember.Service.extend({
 
 	lastVersion: "1.0.0",
 
-	bait: undefined,
-	fish: undefined,
-
 	init() {
 		Ember.Logger.debug("Initialise Fishing Database");
 		var store = this.get('store');
 
+		// FIXME : We should only load DB if not already in local storage
 		this.loadDatabase();
+
+		// Check version and reload DB if needed
+		store.queryRecord('version', { filter: { module:"fishing"} }).then(
+			function(storedVersion){
+				Ember.Logger.debug("Current Stored Version :", storedVersion.get('version'));
+				Ember.Logger.debug("Last Version :", this.get('lastVersion'));
+				if(storedVersion.get('version') != this.get('lastVersion')){
+					Ember.Logger.debug("We need to reload the DB");
+					if(storedVersion.get('version') != undefined){
+						storedVersion.deleteRecord();	
+					}
+					this.loadDatabase();
+				}else{
+					Ember.Logger.debug("DB up to date");
+				}
+			}.bind(this)
+		);	
 	},
 
 	loadJsonDb(entity){
@@ -26,15 +41,10 @@ export default Ember.Service.extend({
 	},
 
 	loadDatabase() {
-		Ember.Logger.debug('Import Fish Database');
-		var store = this.get('store');
-		
+		Ember.Logger.debug('Import Fish Database sources');	
 		this.loadJsonDb('bait');
 		this.loadJsonDb('fish');
 		this.loadJsonDb('island');
-
-		// Done - Update Version
-		store.createRecord('version', {module:"fishing", version:this.get('lastVersion')});
 	},
 
 	dataLoaded: function() {
@@ -64,15 +74,20 @@ export default Ember.Service.extend({
 				store.createRecord('fishing/island', island);
 			}.bind(this));
 
+			// Save Records in Store
+			this.get('store').peekAll('fishing/fish').save();
+			this.get('store').peekAll('fishing/island').save();
+
 			Ember.Logger.debug('-- Import DONE --');
+			store.createRecord('version', {module:"fishing", version:this.get('lastVersion')}).save();
 		}
 	}.observes('bait', 'fish', 'island'),
 
 	getAllFish(){
-		return this.get('store').peekAll('fishing/fish');
+		return this.get('store').findAll('fishing/fish');
 	},
 
 	getAllIslands(){
-		return this.get('store').peekAll('fishing/island');
+		return this.get('store').findAll('fishing/island');
 	},
 });
