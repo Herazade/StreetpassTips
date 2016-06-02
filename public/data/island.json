@@ -1,17 +1,17 @@
 [
 	{
-		"id": "PRE",
+		"id": "Pre",
 		"name": "Prelude Island",
 		"spots" : [
-			{"id": "BeBa", "name": "Beginniner's Bay"},
-			{"id": "SyRi", "name": "Sylvana River"},
-			{"id": "CyLa", "name": "Cypress Lake"},
-			{"id": "PDSC", "name": "Prelude Deep-Sea Cruise"}
+			{"id": "BeBa", "name": "Beginniner's Bay", type:"C"},
+			{"id": "SyRi", "name": "Sylvana River", type:"R"},
+			{"id": "CyLa", "name": "Cypress Lake", type:"L"},
+			{"id": "PDSC", "name": "Prelude Deep-Sea Cruise", type:"D"}
 		],
 		"ticket" : null
 	},
 	{
-		"id": "IS2",
+		"id": "Gio",
 		"name": "Giovanna Island",
 		"spots" : [
 			{"id": "ArBe", "name": "Ariana Beach"},
@@ -23,14 +23,56 @@
 		"ticket" : "silver"
 	},
 	{
-		"id": "IS3",
-		"name": "Island 3",
+		"id": "Mer",
+		"name": "Mermaid Island",
 		"spots" : [
-			{"id": "SP31"},
-			{"id": "SP32"},
-			{"id": "SP33"},
-			{"id": "SP34"}
+			{"id": "SaRe", "name": "Sanzaneeta Reef"},
+			{"id": "StRo", "name": "Steelsbay Rock"},
+			{"id": "PaLa", "name": "Parker Lake"},
+			{"id": "MaPo", "name": "Marshview Pond"},
+			{"id": "MaRi", "name": "Maple River"},
+			{"id": "HiLa", "name": "Highland Lake"}
+		],
+		"ticket" : "gold"
+	},
+	{
+		"id": "Atl",
+		"name": "Atlantis Island",
+		"spots" : [
+			{"id": "SaRe", "name": "Dayton Point"},
+			{"id": "StRo", "name": "Beauford Pond"},
+			{"id": "PaLa", "name": "Mistfall River"},
+			{"id": "MaPo", "name": "Kohu Lake"},
+			{"id": "MaRi", "name": "Graydale Lake"},
+			{"id": "HiLa", "name": "Kastamoor Pond"}
+		],
+		"ticket" : "gold"
+	},
+	{
+		"id": "Mer",
+		"name": "Mermaid Island",
+		"spots" : [
+			{"id": "SaRe", "name": "Sanzaneeta Reef"},
+			{"id": "StRo", "name": "Steelsbay Rock"},
+			{"id": "PaLa", "name": "Parker Lake"},
+			{"id": "MaPo", "name": "Marshview Pond"},
+			{"id": "MaRi", "name": "Maple River"},
+			{"id": "HiLa", "name": "Highland Lake"}
+		],
+		"ticket" : "gold"
+	},
+	{
+		"id": "Mer",
+		"name": "Mermaid Island",
+		"spots" : [
+			{"id": "SaRe", "name": "Sanzaneeta Reef"},
+			{"id": "StRo", "name": "Steelsbay Rock"},
+			{"id": "PaLa", "name": "Parker Lake"},
+			{"id": "MaPo", "name": "Marshview Pond"},
+			{"id": "MaRi", "name": "Maple River"},
+			{"id": "HiLa", "name": "Highland Lake"}
 		],
 		"ticket" : "gold"
 	}
+
 ]
