@@ -7,9 +7,11 @@ module.exports = function(defaults) {
     // Add options here
     sassOptions: {
       includePaths: ['bower_components/materialize/sass']
+    },
+    pretender: {
+      enabled: true
     }
   });
-
 
 
   // Use `app.import` to add additional libraries to the generated

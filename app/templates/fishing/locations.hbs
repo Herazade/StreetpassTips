@@ -1,24 +1,6 @@
 <h5>Fish by Location</h5>
-
-<div id="filters" class="section">
-	<p>TODO Filters</p>
-</div>
-
-<div id="results" class="section">
-	<table class="bordered">
-        <thead>
-          <tr>
-              <th data-field="island">Island</th>
-              <th data-field="spot">Spot</th>
-              <th data-field="fishName">Name</th>
-              <th data-field="fishInfo">Info</th>
-          </tr>
-        </thead>
-
-        <tbody>
-           <tr>
-            <td>TODO</td>
-         	</tr>
-        </tbody>
-      </table>
-</div>
+<ul class="collection with-header">
+{{#each model as |island|}}
+  {{island-detail island=island}}
+{{/each}}
+</ul>

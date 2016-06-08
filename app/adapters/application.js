@@ -1,5 +1,4 @@
-import LSAdapter from 'ember-localstorage-adapter';
+import DS from 'ember-data';
 
-export default LSAdapter.extend({
-  namespace: 'StreetPassTips'
+export default DS.RESTAdapter.extend({  
 });

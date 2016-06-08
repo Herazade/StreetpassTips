@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-	model (){
-		// Model Todo
+	model() {
+    	return this.store.findAll('island');
 	}
 });
