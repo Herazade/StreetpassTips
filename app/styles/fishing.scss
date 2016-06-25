@@ -1,3 +1,11 @@
+// Colors
+$coast: #27790c;
+$river: #0c7ba0;
+$lake:  #c564f7;
+$deep:  #582e02;
+
+//Styles
+
 .fishList {
 	.row:nth-child(odd){
 		background-color: $lighterGrey;
@@ -5,6 +13,37 @@
 	.row{
     	margin-bottom: 2px;
     }
+}
+
+.island-name{
+	font-weight: bold;
+}
+
+.spot{
+
+	/* Style for Coast fishing Spot name*/
+	&[spot-type="C"] .spot-name{
+		color: $coast;
+	}
+
+	/* Style for River fishing Spot name*/
+	&[spot-type="R"] .spot-name{
+		color: $river;
+	}
+
+	/* Style for Lake/Pond fishing Spot name*/
+	&[spot-type="L"] .spot-name{
+		color: $lake;
+	}
+
+	/* Style for Deep Sea fishing Spot name*/
+	&[spot-type="D"] .spot-name{
+		color: $deep;
+	}
+
+	.spot-name{
+		font-weight: bold;
+	}
 }
 
 .star{
