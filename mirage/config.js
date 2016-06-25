@@ -24,11 +24,11 @@ export default function() {
         id: 'Gio',
         name: 'Giovanna Island',
         spots : [
-        {id: 'ArBe', name: 'Ariana Beach'},
-        {id: 'FePo', name: 'Fernhollow Pond'},
-        {id: 'ShLa', name: 'Shangri Lake'},
-        {id: 'CoPi', name: 'Coleville Pier'},
-        {id: 'EmRi', name: 'Emberwood River'}
+        {id: 'ArBe', name: 'Ariana Beach', type:'C'},
+        {id: 'FePo', name: 'Fernhollow Pond', type:'L'},
+        {id: 'ShLa', name: 'Shangri Lake', type:'L'},
+        {id: 'CoPi', name: 'Coleville Pier', type:'C'},
+        {id: 'EmRi', name: 'Emberwood River', type:'R'}
         ],
         ticket : 'silver'
       },
@@ -36,12 +36,12 @@ export default function() {
         id: 'Mer',
         name: 'Mermaid Island',
         spots : [
-        {id: 'SaRe', name: 'Sanzaneeta Reef'},
-        {id: 'StRo', name: 'Steelsbay Rock'},
-        {id: 'PaLa', name: 'Parker Lake'},
-        {id: 'MaPo', name: 'Marshview Pond'},
-        {id: 'MaRi', name: 'Maple River'},
-        {id: 'HiLa', name: 'Highland Lake'}
+        {id: 'SaRe', name: 'Sanzaneeta Reef', type:'C'},
+        {id: 'StRo', name: 'Steelsbay Rock', type:'C'},
+        {id: 'PaLa', name: 'Parker Lake', type:'L'},
+        {id: 'MaPo', name: 'Marshview Pond', type:'L'},
+        {id: 'MaRi', name: 'Maple River', type:'R'},
+        {id: 'HiLa', name: 'Highland Lake', type:'L'}
         ],
         ticket : 'gold'
       },
@@ -49,41 +49,66 @@ export default function() {
         id: 'Atl',
         name: 'Atlantis Island',
         spots : [
-        {id: 'SaRe', name: 'Dayton Point'},
-        {id: 'StRo', name: 'Beauford Pond'},
-        {id: 'PaLa', name: 'Mistfall River'},
-        {id: 'MaPo', name: 'Kohu Lake'},
-        {id: 'MaRi', name: 'Graydale Lake'},
-        {id: 'HiLa', name: 'Kastamoor Pond'}
+        {id: 'SaRe', name: 'Dayton Point', type:'C'},
+        {id: 'StRo', name: 'Beauford Pond', type:'C'},
+        {id: 'PaLa', name: 'Mistfall River', type:'C'},
+        {id: 'MaPo', name: 'Kohu Lake', type:'C'},
+        {id: 'MaRi', name: 'Graydale Lake', type:'C'},
+        {id: 'HiLa', name: 'Kastamoor Pond', type:'C'}
         ],
         ticket : 'gold'
       },
       {
-        id: 'Mer',
-        name: 'Mermaid Island',
+        id: 'Pos',
+        name: 'Poseidon Island',
         spots : [
-        {id: 'SaRe', name: 'Sanzaneeta Reef'},
-        {id: 'StRo', name: 'Steelsbay Rock'},
-        {id: 'PaLa', name: 'Parker Lake'},
-        {id: 'MaPo', name: 'Marshview Pond'},
-        {id: 'MaRi', name: 'Maple River'},
-        {id: 'HiLa', name: 'Highland Lake'}
+        {id: 'SePi', name: 'Seraphia Pier', type:'C'},
+        {id: 'ClLa', name: 'Clearwater Lake', type:'L'},
+        {id: 'ArRo', name: 'Aruna Rock', type:'C'},
+        {id: 'EuRi', name: 'Eureka River', type:'R'},
+        {id: 'PoDS', name: 'Psoeidon Deep-Sea Cruise', type:'D'},
+        {id: 'WyLa', name: 'Wyverdun Lake', type:'L'}
         ],
         ticket : 'gold'
       },
       {
-        id: 'Mer',
-        name: 'Mermaid Island',
+        id: 'Myt',
+        name: 'Mythroll Island',
         spots : [
-        {id: 'SaRe', name: 'Sanzaneeta Reef'},
-        {id: 'StRo', name: 'Steelsbay Rock'},
-        {id: 'PaLa', name: 'Parker Lake'},
-        {id: 'MaPo', name: 'Marshview Pond'},
-        {id: 'MaRi', name: 'Maple River'},
-        {id: 'HiLa', name: 'Highland Lake'}
+        {id: 'MDS1', name: 'Mythroll Deep-Sea Cruise 1', type:'D'},
+        {id: 'CuCa', name: 'Cutty\'s Cave', type:'C'},
+        {id: 'BaRi', name: 'Bangaban River', type:'R'},
+        {id: 'AbJu', name: 'Abunda Jungle', type:'C'},
+        {id: 'MDS2', name: 'Mythroll Deep-Sea Cruise 2', type:'C'}
         ],
         ticket : 'gold'
-      }
+      },
+      {
+        id: 'Oce',
+        name: 'Oceanora Island',
+        spots : [
+        {id: 'YuRe', name: 'Yunali Reef', type:'C'},
+        {id: 'FoLa', name: 'Foxmere Lake', type:'L'},
+        {id: 'BrBe', name: 'Bridgecliff Beach', type:'C'},
+        {id: 'ODS1', name: 'Oceanora Deep-Sea Cruise 1', type:'D'},
+        {id: 'ArBe', name: 'Arcana Beach', type:'C'},
+        {id: 'HaRi', name: 'Hazeldown River', type:'R'},
+        {id: 'ODS2', name: 'Oceanora Deep-Sea Cruise 2', type:'D'},
+        ],
+        ticket : 'gold'
+      },
+      {
+        id: 'Mys',
+        name: 'Mysteria Island',
+        spots : [
+        {id: 'MyDS', name: 'Mysteria Deep-Sea Cruise', type:'D'},
+        {id: 'SeRi', name: 'Sellbrook River', type:'R'},
+        {id: 'MaJu', name: 'Mahtori Jungle', type:'R'},
+        {id: 'SuRi', name: 'Sulani River', type:'R'},
+        {id: 'EnCa', name: 'Enigma Cave', type:'C'}
+        ],
+        ticket : 'gold'
+      },
       ]
     };
   });
