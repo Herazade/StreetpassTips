@@ -1,2 +1,2 @@
-# StreetpassTips
-Webapp about streetpass games in EN and FR
+# StreetpassTips 
+Webapp about streetpass games in EN and FR 
