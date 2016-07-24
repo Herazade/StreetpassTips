@@ -1,0 +1,24 @@
+.fishList {
+	.row:nth-child(odd){
+		background-color: $lighterGrey;
+	}
+	.row{
+    	margin-bottom: 2px;
+    }
+}
+
+.star{
+	height:20px;
+	width:60px;
+	display:block;
+
+	&.star1{
+		background-image: url("icons/star1.png");
+	}
+	&.star2{
+		background-image: url("icons/star2.png");
+	}
+	&.star3{
+		background-image: url("icons/star3.png");
+	}
+}
